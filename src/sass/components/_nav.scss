@@ -1,0 +1,275 @@
+.nav {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	
+	z-index: 10;
+	
+	
+	@include respond(phone) {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	//////////////////////////////////////////////////////////////////
+	//Mobile menu
+	&__mobile-menu {
+		display: none;
+		position: relative;
+		width: 50%;
+		margin-right: 4rem;
+		
+		@include respond(phone) {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	
+	&__mobile-btn {
+		background-color: transparent;
+		position: relative;
+		width: 7rem;
+		height: 7rem;
+		border: 3.5px solid $default-color;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all .2s;
+		
+		&::before,
+		&::after {
+			content: '';
+			display: inline-block;
+			height: .5rem;
+			width: 3rem;
+			background-color: $default-color;
+			transition: all .2s;
+		}
+		
+		&::before {
+			transform: translateY(-.5rem);
+			
+		}
+		
+		&::after {
+			transform: translateY(.5rem);
+			
+		}
+		
+		&:focus {
+			outline: none;
+		}
+	}
+	
+	&__mobile-btn--active {
+		
+		&::before {
+			transform: translateY(.5rem) rotate(140deg);
+			
+		}
+		
+		&::after {
+			transform: translateY(-.5rem) rotate(-140deg);
+			
+		}
+	}
+	
+	&__mobile-btn--active > &__btn-line {
+		opacity: 0;
+	}
+	
+	&__btn-line {
+		display: inline-block;
+		height: .5rem;
+		width: 3rem;
+		background-color: $default-color;
+		transition: all .2s;
+	}
+	
+	&__mobile-list {
+		list-style: none;
+		position: absolute;
+		width: 100%;
+		border: 3.5px solid $default-color;
+		top: 6rem;
+		background-color: $color-primary-light;
+		padding: 2rem 1.5rem;
+		transform: translateX(200%);
+		opacity: 0;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	
+	&__mobile-list--active {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	
+	
+	&__mobile-item {
+		align-self: stretch;
+		text-align: center;
+		height: 100%;
+		transition: all .4s;
+		
+		&:not(:last-child) {
+			margin-bottom: 3rem;
+			border-bottom: .2rem solid rgba($default-color, .4);
+		}
+	}
+	
+	&__mobile-item:hover {
+		background-color: rgba($color-black, .4);
+	}
+	
+	&__mobile-item:hover &__mobile-link {}
+	
+	&__mobile-link {
+		font-size: 4rem;
+		font-weight: 700;
+		color: $font-color;
+		text-decoration: none;
+		transition: all .2s;
+		
+	}
+	////////////////////////////////////////////////////////////////////////
+	
+	
+	&__list {
+		flex: 0 0 100%;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		@include respond(phone) {
+			justify-content: flex-start;
+			flex: 0 0 30%;
+		}
+	}
+	
+	&__item {
+		text-align: center;
+		
+		@include respond(phone) {
+			display: none;
+		}
+		
+		@include respond(phone-min) {
+			display: none;
+		}
+		
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+		
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+		
+		&:nth-child(4) {
+			margin-right: 5.5rem;
+			margin-left: 5.5rem;
+			
+			@include respond(phone) {
+				display: inline-block;
+				margin: 0;
+			}
+			
+			@include respond(phone-min) {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+		
+		@include respond(tab-port) {
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
+			
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+			
+			&:nth-child(4) {
+				margin-right: 4rem;
+				margin-left: 4rem;
+			}
+		}
+	}
+	
+	&__menu-link {
+		display: flex;
+		padding: 1rem;
+		
+		&:link,
+		&:visited {
+			font-size: 2.2rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: $font-color;
+			text-decoration: none;
+			display: inline-block;
+			position: relative;
+			backface-visibility: hidden;
+			
+			@include respond(tab-land) {
+				font-size: 1.7rem;
+			}
+			
+			@include respond(tab-port) {
+				font-size: 1.5rem;
+			}
+		}
+		
+		&::before {
+			content: '';
+			display: block;
+			height: .2rem;
+			background-color: $default-color;
+			position: absolute;
+			width: 100%;
+			left: 50%;
+			bottom: -.2rem;
+			transform: translateX(-50%) scale(0);
+			transition: transform .2s;
+		}
+		
+		&:hover::before {
+			transform:translateX(-50%) scale(1);
+		}
+		
+		&:focus {
+			outline: none;
+		}
+		
+	}
+	
+	&__logo-img {
+		
+		@include respond(tab-port) {
+			width: 20rem;
+			height: 12.7rem;
+		}
+		
+		@include respond(phone) {
+			width: 20rem;
+			height: 12.7rem;
+		}
+		
+		@include respond(phone-min) {
+			width: 15rem;
+			height: 8.7rem;
+		}
+	}
+}
+
+.nav__header {}

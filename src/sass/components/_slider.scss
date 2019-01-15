@@ -1,0 +1,128 @@
+.slider {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	
+	&__wrapper {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	
+	
+	&__item {
+		display: none;
+		width: 100%;
+		height: 100%;
+		animation: transit 1s;
+	}
+	
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	&__btn {
+		width: 6rem;
+		height: 100%;
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		z-index: 2;
+		transition: all .2s;
+		
+		&:hover {background-color: rgba($color-black, .4);}
+		
+		&:focus {outline: none;}
+		
+		&:active {
+			background-color: rgba($color-black, .7);
+		}
+	}
+	
+	&__btn:hover &__icon {
+		opacity: 1;
+		fill: $color-white;
+	}
+	
+	&__icon {
+		opacity: .5;
+		fill: $default-color;
+		width: 100%;
+		height: 100%;
+	}
+	
+	&__btn--left {
+		left: 0;
+	}
+	
+	&__btn--right {
+		right: 0;
+	}
+	
+	&__dots {
+		display: flex;
+		position: absolute;
+		list-style: none;
+		bottom: 7rem;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: auto;
+		z-index: 2;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	&__dot {
+		width: 3rem;
+		height: 3rem;
+		background-color: transparent;
+		border: .4rem solid $default-color;
+		opacity: .4;
+		//border-radius: 50%;
+		transition: opacity .2s;
+		cursor: pointer;
+		backface-visibility: hidden;
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+		
+		&::before {
+			content: '';
+			display: block;
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $default-color;
+			opacity: 0;
+			transition: opacity .2s;
+		}
+	}
+	
+	&__dot:hover,
+	&__dot:hover::before {
+		opacity: 1;
+	}
+	
+	&__dot--active,
+	&__dot--active::before {
+		opacity: 1;
+	}
+	
+	&--active {
+		display: block;
+	}
+}

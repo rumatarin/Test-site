@@ -1,0 +1,63 @@
+.about-us {
+	display: flex;
+	
+	@include respond(phone-min) {
+		flex-wrap: wrap;
+	}
+	
+	&__img {
+		display: inline-block;
+		
+		@include respond(phone-min) {
+			width: 8rem;
+			height: 6rem;
+		}
+	}
+	
+	&__title {
+		flex: 0 0 50%;
+		
+		display: flex;
+		padding: 20rem;
+		align-items: center;
+		justify-content: center;
+		background: url(../img/about-bg.jpg);
+		background-size: cover;
+		
+		@include respond(tab-land) {
+			padding: 18rem;
+		}
+		
+		@include respond(tab-port) {
+			padding: 14rem  12rem;
+		}
+		
+		@include respond(phone-min) {
+			flex: 0 0 100%;
+			padding: 2rem  1.5rem;
+			background-position: center;
+		}
+	}
+	
+	&__text {
+		flex: 1;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 9rem 8.5rem;
+		
+		@include respond(tab-land) {
+			padding: 5.2rem 6rem;
+		}
+		
+		@include respond(tab-port) {
+		
+		}
+		
+		@include respond(phone-min) {
+			flex: 1;
+			padding: 4rem  3em;
+		}
+	}
+}

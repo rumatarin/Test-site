@@ -1,0 +1,90 @@
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	&__overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgba($color-black, .75);
+		
+	}
+	
+	&__for-text {
+		background-color: $color-primary;
+		height: 70%;
+		width: 70%;
+		position: relative;
+		border: 8px solid $default-color;
+	}
+	
+	&__for-img {
+		position: relative;
+		background-color: $color-primary;
+		border: 8px solid $default-color;
+	}
+	
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+	
+	&__btn {
+		background-color: transparent;
+		position: absolute;
+		right: -8rem;
+		top: -8rem;
+		width: 5rem;
+		height: 5rem;
+		border: 3px solid $color-primary;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all .2s;
+		
+		&::before,
+		&::after {
+			content: '';
+			display: inline-block;
+			height: .3rem;
+			width: 3rem;
+			background-color: $color-primary;
+			position: absolute;
+			transition: all .2s;
+		}
+		
+		&::before {
+			transform: rotate(135deg);
+			transform-origin: center;
+		}
+		
+		&::after {
+			transform: rotate(-135deg);
+			transform-origin: center;
+		}
+		
+		&:focus {
+			outline: none;
+		}
+	}
+	
+	&__btn-line {
+		display: inline-block;
+		height: .5rem;
+		width: 3rem;
+		background-color: $color-primary;
+		transition: all .2s;
+	}
+	
+}

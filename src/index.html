@@ -1,0 +1,1276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inktattoo</title>
+</head>
+
+<body>
+  <div class="modal"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__mobile-menu">
+        <button class="nav__mobile-btn">
+          <span class="nav__btn-line"></span>
+        </button>
+        <ul class="nav__mobile-list">
+          <li class="nav__mobile-item">
+            <a href="#" class="nav__mobile-link" data-scroll=".header">Home</a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="#" class="nav__mobile-link" data-scroll=".section-about-us">About</a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="#" class="nav__mobile-link" data-scroll=".section-gallery">Gallery</a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="#" class="nav__mobile-link" data-scroll=".section-team">Team</a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="#" class="nav__mobile-link" data-scroll=".section-map">Find Us</a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="#" class="nav__mobile-link" data-scroll=".section-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".header">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-about-us">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-gallery">Gallery</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <img src="img/inktattoo-logo.png" alt="logo" class="nav__logo-img">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-team">Team</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-map">Find Us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <img src="img/slide-1.jpg" srcset="img/slide-1-small.jpg 300w, img/slide-1.jpg 1000w" sizes="(max-width: 200em), (max-width: 37.5em)"
+            alt="Slide 1" class="slider__img js__slider-img">
+        </div>
+        <div class="slider__item">
+          <img src="img/slide-2.jpg" alt="Slide 2" class="slider__img js__slider-img">
+        </div>
+        <div class="slider__item">
+          <img src="img/slide-3.jpg" alt="Slide 3" class="slider__img js__slider-img">
+        </div>
+        <div class="slider__item">
+          <img src="img/slide-4.jpg" alt="Slide 4" class="slider__img js__slider-img">
+        </div>
+      </div>
+
+
+      <button class="slider__btn slider__btn--left">
+        <svg class="slider__icon">
+          <use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use>
+        </svg>
+      </button>
+      <button class="slider__btn slider__btn--right">
+        <svg class="slider__icon">
+          <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+        </svg>
+      </button>
+      <ul class="slider__dots js__slider__dots"></ul>
+    </div>
+  </header>
+
+  <section class="section-about-us">
+    <div class="about-us">
+      <div class="about-us__title">
+        <div class="u-border-block">
+          <h2 class="heading-primary">About us</h2>
+        </div>
+      </div>
+      <div class="about-us__text">
+        <img src="img/tattoo-mashin.png" alt="pic" class="about-us__img u-margin-bottom-medium">
+        <div class="u-text-center u-margin-bottom-medium">
+          <h3 class="heading-secondary">
+            Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </h3>
+        </div>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies
+          quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero. </p>
+        <p class="paragraph">Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut
+          felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi
+          nulla et risus.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="section-testimonials">
+    <div class="testimonials">
+      <div class="container">
+        <div class="testimonials__text">
+          <p class="paragraph paragraph--comment">Aliquam ac justo interdum, elementum ligula et, condimentum
+            orci. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="testimonials__sign">
+          <p class="paragraph paragraph--comment">John Doe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-team">
+    <div class="team">
+      <div class="team__title">
+        <div class="u-border-block">
+          <h2 class="heading-primary">Team</h2>
+        </div>
+      </div>
+      <div class="team__member-box">
+        <div class="team__photo">
+          <img src="img/member-1.jpg" alt="Photo 1" class="team__member-photo">
+        </div>
+        <div class="team__info">
+          <h4 class="heading-membername u-margin-bottom-midi">Corey Miller</h4>
+          <p class="paragraph u-margin-bottom-midi">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies
+            quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.
+            Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis
+            vehicula
+            aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et
+            risus.
+          </p>
+          <div class="team__member-social">
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-tumblr"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-google"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="team__member-box team__member-box--revert">
+        <div class="team__photo">
+          <img src="img/member-2.jpg" alt="Photo 2" class="team__member-photo">
+        </div>
+        <div class="team__info">
+          <h4 class="heading-membername u-margin-bottom-midi">Kat Von D</h4>
+          <p class="paragraph u-margin-bottom-midi">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies
+            quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.
+            Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis
+            vehicula
+            aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et
+            risus.
+          </p>
+          <div class="team__member-social">
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-tumblr"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="team__social-link">
+              <svg class="team__social-icon">
+                <use xlink:href="img/sprite.svg#icon-google"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <form action="#" class="team__form">
+        <div class="u-text-left">
+          <h3 class="heading-secondary heading-secondary--sub">Newsletter</h3>
+        </div>
+        <p class="paragraph paragraph--uppercase u-margin-bottom-medium u-width-small">
+          Join thousands of other people subscribe to our news
+        </p>
+        <div class="team__form-group">
+          <input type="email" class="team__form-input" placeholder="insert email">
+          <button class="btn team__btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="section-twitter">
+    <div class="twitter">
+      <div class="twitter__item u-margin-bottom-medium">
+        <svg class="twitter__img">
+          <use xlink:href="img/sprite.svg#icon-twitter"></use>
+        </svg>
+      </div>
+      <div class="twitter__text">
+        <p class="paragraph paragraph--comment">
+          RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups
+          today may be big friends later. (9/10) 2 days ago
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section-gallery">
+    <div class="gallery">
+      <div class="gallery__title">
+        <div class="u-border-block">
+          <h2 class="heading-primary">Gallery</h2>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-3.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-4.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-1.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item-main">
+        <img class="gallery__img" src="img/tattoo-gal-2.jpg" alt="pic">
+        <div class="gallery__hover">
+          <div class="gallery__hover-zoom u-margin-bottom-medium">
+            <a href="#" class="gallery__link js__zoom-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="gallery__hover-group">
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link js__info-link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </a>
+            <a href="#" class="gallery__link">
+              <svg class="gallery__icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-contact">
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts__info">
+          <div class="contacts__title u-margin-bottom-midi">
+            <div class="u-border-block">
+              <h2 class="heading-primary">Contact us</h2>
+            </div>
+          </div>
+          <h3 class="heading-secondary u-margin-bottom-midi">
+            Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
+          </h3>
+          <div class="contacts__address u-margin-bottom-biggest">
+            <ul class="contacts__list">
+              <li class="contacts__item u-text-bold u-margin-bottom-medium">Info:</li>
+              <li class="contacts__item">Phone: <a href="tel:+123456789456" class="contacts__link u-text-bold-size">+
+                  123-456-789-456</a></li>
+              <li class="contacts__item">Fax: <a href="tel:+123456789456" class="contacts__link u-text-bold-size">+
+                  123-456-789-456</a>
+              </li>
+              <li class="contacts__item">Email: <a href="mailto:+123456789456" class="contacts__link u-text-bold-size">+
+                  123-456-789-456</a></li>
+              <li class="contacts__item">Adress: <span class="u-text-bold-size">1234 Str. Road, City</span>
+              </li>
+            </ul>
+            <ul class="contacts__list">
+              <li class="contacts__item u-text-bold u-margin-bottom-medium">Work Hours:</li>
+              <li class="contacts__item">Mon - Fri : <span class="u-text-bold-size">09am - 18pm</span></li>
+              <li class="contacts__item">Sat : <span class="u-text-bold-size">09am - 1pm</span></li>
+              <li class="contacts__item">Sun : <span class="u-text-bold-size">closed</span></li>
+            </ul>
+          </div>
+          <div class="contacts__social">
+            <a href="#" class="contacts__social-link">
+              <svg class="contacts__social-icon">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="contacts__social-link">
+              <svg class="contacts__social-icon">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="contacts__social-link">
+              <svg class="contacts__social-icon">
+                <use xlink:href="img/sprite.svg#icon-tumblr"></use>
+              </svg>
+            </a>
+            <a href="#" class="contacts__social-link">
+              <svg class="contacts__social-icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+            <a href="#" class="contacts__social-link">
+              <svg class="contacts__social-icon">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="contacts__social-link">
+              <svg class="contacts__social-icon">
+                <use xlink:href="img/sprite.svg#icon-google"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form action="#" class="contacts__form">
+          <input type="text" class="contacts__input" placeholder="Full Name">
+          <input type="email" class="contacts__input" placeholder="Email">
+          <textarea class="contacts__textarea" placeholder="Message"></textarea>
+          <button class="btn contacts__btn">Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section-map">
+    <div class="map">
+      <span class="pin">
+        <svg class="pin__img">
+          <use xlink:href="img/sprite.svg#icon-location"></use>
+        </svg>
+      </span>
+      <!--<span class="pin">-->
+      <!--<svg class="pin__img pin__img&#45;&#45;shadow">-->
+      <!--<use xlink:href="img/sprite.svg#icon-location"></use>-->
+      <!--</svg>-->
+      <!--</span>-->
+    </div>
+  </section>
+
+  <footer class="footer">
+    <nav class="nav u-margin-bottom-biggest">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".header">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-about-us">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-gallery">Gallery</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <img src="img/inktattoo-logo.png" alt="logo" class="nav__logo-img">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-team">Team</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-map">Find Us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__menu-link" data-scroll=".section-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright">
+      &copy; InkTattoo. All rights reserved - Designed by theuncreativelab.com
+    </div>
+  </footer>
+</body>
+
+</html>

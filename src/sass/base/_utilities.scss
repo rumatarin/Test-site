@@ -1,0 +1,87 @@
+.u-margin-bottom-small {margin-bottom: 1rem;}
+.u-margin-bottom-medium {margin-bottom: 3rem;}
+
+.u-margin-bottom-midi {
+	margin-bottom: 5rem;
+	
+	@include respond(tab-land) {
+		margin-bottom: 3rem;
+	}
+}
+
+.u-margin-bottom-biggest {
+	margin-bottom: 11rem;
+	
+	@include respond(tab-land) {
+		margin-bottom: 8rem;
+	}
+	
+	@include respond(tab-port) {
+		margin-bottom: 5rem;
+	}
+}
+
+.u-width-small {
+	
+	@include respond(tab-port) {
+		width: 45%;
+	}
+	@include respond(phone-min) {
+		width: 80%;
+	}
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-left {
+	text-align: left;
+	width: 100%;
+	
+	@include respond(tab-port) {
+		width: 45%;
+	}
+	
+	@include respond(phone-min) {
+		width: 80%;
+	}
+}
+
+.u-border-block {
+	display: inline-block;
+	border: 10px solid $default-color;
+	padding: 2rem 3rem;
+	
+	@include respond(tab-land) {
+		border: 8px solid $default-color;
+		padding: 1.5rem 2.5rem;
+	}
+	
+	@include respond(phone) {
+		border: 3.5px solid $default-color;
+		padding: 1.5rem 1rem;
+	}
+	
+	@include respond(phone-min) {
+		padding: 1.5rem 6rem;
+	}
+}
+
+.u-text-bold {
+	font-weight: 700 !important;
+}
+
+.u-text-bold-size {
+	font-weight: 700 !important;
+	font-size: 1.2rem;
+	
+	@include respond(tab-port) {
+		font-size: 1rem;
+	}
+	
+	@include respond(phone-min) {
+		font-size: 3rem;
+		
+	}
+}

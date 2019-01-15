@@ -1,0 +1,136 @@
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+	display: flex;
+}
+
+
+
+.header {
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	padding-top: 3rem;
+	overflow: hidden;
+}
+
+.section-about-us {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.section-testimonials {
+	width: 100%;
+	padding: 21rem 0;
+	background: url(../img/testimon-bg.jpg);
+	background-size: cover;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	
+	@include respond(tab-land) {
+		padding: 13rem 0;
+	}
+	
+	@include respond(tab-port) {
+		padding: 13rem 1.5rem;
+	}
+	
+	@include respond(phone-min) {
+		padding: 8rem 1.5rem;
+	}
+}
+
+.section-team {
+	display: flex;
+}
+
+.section-twitter {
+	width: 100%;
+	padding: 21rem 0 21rem 0;
+	background: url(../img/twitter-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	
+	@include respond(tab-land) {
+		padding: 10rem 0;
+		background: rgba($color-black, .3) url(../img/twitter-bg.jpg);
+		background-blend-mode: color;
+	}
+	
+	@include respond(tab-port) {
+		padding: 10rem 1.5rem;
+		
+	}
+	
+	@include respond(phone-min) {
+		padding: 8rem 1.5rem;
+	}
+}
+
+.section-gallery {}
+
+.section-contact {
+	background-color: $color-primary-lighten;
+	padding: 18rem 0 15rem 0;
+	
+	@include respond(tab-land) {
+		padding: 13rem 0 10rem 0;
+	}
+	
+	@include respond(tab-port) {
+		padding: 10rem 0 8rem 0;
+	}
+	
+	@include respond(phone-min) {
+		padding: 2rem 0 4rem 0;
+	}
+}
+
+.section-map {
+	position: relative;
+	padding: 40rem 0;
+	background: url(../img/map.jpg);
+	background-size: cover;
+	
+	@include respond(tab-port) {
+		background-position: center;
+		padding: 25rem 0;
+	}
+	
+	@include respond(phone-min) {
+		background-position: center;
+		padding: 20rem 0;
+	}
+}
+
+.footer {
+	background-color: $color-grey;
+	padding: 17rem 0 6.5rem 0;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	@include respond(tab-land) {
+		padding: 10rem 0 3.5rem 0;
+	}
+	
+	@include respond(phone-min) {
+		padding: 6rem 0 3.5rem 0;
+	}
+}

@@ -1,0 +1,86 @@
+.testimonials {
+	display: flex;
+	
+	position: relative;
+	
+	&__text {
+		position: relative;
+		
+		&::before {
+			content: '\201C';
+			font-size: 15rem;
+			color: $color-primary;
+			font-style: italic;
+			line-height: 0;
+			position: absolute;
+			left: -8rem;
+			top: 0;
+			
+			@include respond(tab-port) {
+				left: -5rem;
+				top: 0;
+			}
+			
+			@include respond(phone-min) {
+				left: -3rem;
+				top: 0;
+			}
+		}
+		
+		&::after {
+			content: '\201D';
+			font-size: 15rem;
+			color: $color-primary;
+			font-style: italic;
+			line-height: 0;
+			position: absolute;
+			right: -6rem;
+			bottom: -6rem;
+			
+			@include respond(tab-port) {
+				right: -3rem;
+				bottom: -11rem;
+			}
+			
+			@include respond(phone) {
+				right: -6rem;
+				bottom: -6rem;
+			}
+			
+			@include respond(phone-min) {
+				right: -6rem;
+				bottom: -6rem;
+			}
+		}
+	}
+	
+	&__sign {
+		text-transform: uppercase;
+		
+		display: flex;
+		align-items: center;
+		position: absolute;
+		right: 5rem;
+		bottom: -5rem;
+		
+		&::before {
+			content: '';
+			display: block;
+			height: .2rem;
+			width: .6rem;
+			background-color: $color-primary;
+			margin-right: .6rem;
+			
+		}
+		
+		&::after {
+			content: '';
+			display: block;
+			height: .2rem;
+			width: .6rem;
+			background-color: $color-primary;
+			margin-left: .6rem;
+		}
+		
+	}
+}

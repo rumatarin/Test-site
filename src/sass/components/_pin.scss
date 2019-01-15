@@ -1,0 +1,50 @@
+.pin {
+	display: inline-block;
+	position: absolute;
+	
+	right: 46%;
+	bottom: 49%;
+	
+	
+	@include respond(tab-land) {
+		right: 38%;
+		bottom: 51%;
+	}
+	
+	@include respond(tab-port) {
+		right: 46%;
+		bottom: 51%;
+	}
+	
+	@include respond(phone-min) {
+		right: 43%;
+		bottom: 51%;
+	}
+	
+	&__img {
+		height: 9rem;
+		width: 9rem;
+		fill: $color-pin;
+		position: relative;
+		z-index: 10;
+		
+		@include respond(tab-port) {
+			height: 5.5rem;
+			width: 5.5rem;
+		}
+		
+		@include respond(phone-min) {
+			height: 4.5rem;
+			width: 4.5rem;
+		}
+	}
+	
+	//&__img--shadow {
+	//	fill: $color-black;
+	//	position: relative;
+	//	filter: blur(3px);
+	//	transform-origin: center bottom;
+	//	transform: skew(-114deg);
+	//	z-index: 1;
+	//}
+}

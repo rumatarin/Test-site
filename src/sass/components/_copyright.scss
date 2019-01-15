@@ -1,0 +1,9 @@
+.copyright {
+	font-size: 2rem;
+	font-weight: 400;
+	color: $font-color;
+	
+	@include respond(tab-land) {
+		font-size: 1.4rem;
+	}
+}
