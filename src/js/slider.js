@@ -7,6 +7,7 @@ class someSlider {
 		this.$btnLeft = $('.slider__btn--left');
 		this.$btnRight = $('.slider__btn--right');
 		this.$sliderTarget;
+		this.$runTimer;
 		this._getDots();
 		this._addActive();
 		this._events();
@@ -68,15 +69,16 @@ class someSlider {
 	}
 
 	_sliderTiming() {
-		setInterval(() => {
+		this.$runTimer = setInterval(() => {
 			this._autoPlay();
 		}, 5000);
 	}
 
 	_resetTime() {
-		
-		clearInterval(this._sliderTiming);
-		
+		clearInterval(this.$runTimer);
+    this.$runTimer = setInterval(() => {
+      this._autoSlide();
+    }, 5000);
 	}
 }
 
